@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hector_gazebo_plugins_generate_messages_py"
-  "/home/virtual/workspace/devel/lib/python2.7/dist-packages/hector_gazebo_plugins/srv/_SetBias.py"
-  "/home/virtual/workspace/devel/lib/python2.7/dist-packages/hector_gazebo_plugins/srv/__init__.py"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib/python2.7/dist-packages/hector_gazebo_plugins/srv/_SetBias.py"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib/python2.7/dist-packages/hector_gazebo_plugins/srv/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

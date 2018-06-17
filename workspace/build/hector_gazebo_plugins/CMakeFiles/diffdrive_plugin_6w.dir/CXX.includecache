@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/virtual/workspace/src/hector_gazebo_plugins/include/hector_gazebo_plugins/diffdrive_plugin_6w.h
+/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_gazebo_plugins/include/hector_gazebo_plugins/diffdrive_plugin_6w.h
 map
 -
 gazebo/common/Plugin.hh
@@ -32,7 +32,7 @@ boost/thread.hpp
 boost/bind.hpp
 -
 
-/home/virtual/workspace/src/hector_gazebo_plugins/src/diffdrive_plugin_6w.cpp
+/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_gazebo_plugins/src/diffdrive_plugin_6w.cpp
 algorithm
 -
 assert.h

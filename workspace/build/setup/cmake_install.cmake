@@ -1,8 +1,8 @@
-# Install script for directory: /home/virtual/workspace/src/setup
+# Install script for directory: /home/virtual/RoboCup2018RVRL_Demo/workspace/src/setup
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/virtual/workspace/install")
+  set(CMAKE_INSTALL_PREFIX "/home/virtual/RoboCup2018RVRL_Demo/workspace/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/virtual/workspace/build/setup/catkin_generated/installspace/setup.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/virtual/RoboCup2018RVRL_Demo/workspace/build/setup/catkin_generated/installspace/setup.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/setup/cmake" TYPE FILE FILES
-    "/home/virtual/workspace/build/setup/catkin_generated/installspace/setupConfig.cmake"
-    "/home/virtual/workspace/build/setup/catkin_generated/installspace/setupConfig-version.cmake"
+    "/home/virtual/RoboCup2018RVRL_Demo/workspace/build/setup/catkin_generated/installspace/setupConfig.cmake"
+    "/home/virtual/RoboCup2018RVRL_Demo/workspace/build/setup/catkin_generated/installspace/setupConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/setup" TYPE FILE FILES "/home/virtual/workspace/src/setup/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/setup" TYPE FILE FILES "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/setup/package.xml")
 endif()
 

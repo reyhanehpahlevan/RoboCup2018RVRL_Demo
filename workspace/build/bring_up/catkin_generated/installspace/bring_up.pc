@@ -1,8 +1,8 @@
-prefix=/home/virtual/workspace/install
+prefix=/home/virtual/RoboCup2018RVRL_Demo/workspace/install
 
 Name: bring_up
 Description: Description of bring_up
 Version: 0.0.1
 Cflags: 
-Libs: -L/home/virtual/workspace/install/lib 
+Libs: -L/home/virtual/RoboCup2018RVRL_Demo/workspace/install/lib 
 Requires: geometry_msgs roscpp

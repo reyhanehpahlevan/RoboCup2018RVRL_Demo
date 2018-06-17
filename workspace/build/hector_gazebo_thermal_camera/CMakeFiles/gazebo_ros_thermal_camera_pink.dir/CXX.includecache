@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/virtual/workspace/src/hector_gazebo_thermal_camera/include/hector_gazebo_thermal_camera/gazebo_ros_thermal_camera.h
+/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_gazebo_thermal_camera/include/hector_gazebo_thermal_camera/gazebo_ros_thermal_camera.h
 gazebo_plugins/gazebo_ros_camera_utils.h
 -
 
-/home/virtual/workspace/src/hector_gazebo_thermal_camera/src/gazebo_ros_thermal_camera.cpp
+/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_gazebo_thermal_camera/src/gazebo_ros_thermal_camera.cpp
 hector_gazebo_thermal_camera/gazebo_ros_thermal_camera.h
 -
 gazebo/sensors/Sensor.hh
@@ -22,9 +22,9 @@ sensor_msgs/image_encodings.h
 gazebo/gazebo_config.h
 -
 
-/home/virtual/workspace/src/hector_gazebo_thermal_camera/src/gazebo_ros_thermal_camera_plugin.cpp
+/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_gazebo_thermal_camera/src/gazebo_ros_thermal_camera_plugin.cpp
 gazebo_ros_thermal_camera.cpp
-/home/virtual/workspace/src/hector_gazebo_thermal_camera/src/gazebo_ros_thermal_camera.cpp
+/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_gazebo_thermal_camera/src/gazebo_ros_thermal_camera.cpp
 gazebo/plugins/CameraPlugin.hh
 -
 

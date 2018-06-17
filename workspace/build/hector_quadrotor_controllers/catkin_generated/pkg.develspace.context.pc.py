@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "roscpp".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lhector_quadrotor_controllers".split(';') if "-lhector_quadrotor_controllers" != "" else []
 PROJECT_NAME = "hector_quadrotor_controllers"
-PROJECT_SPACE_DIR = "/home/virtual/workspace/devel"
+PROJECT_SPACE_DIR = "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel"
 PROJECT_VERSION = "0.0.0"

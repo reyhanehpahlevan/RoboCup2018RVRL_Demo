@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gazebo_ros_thermal_camera_pink.dir/src/gazebo_ros_thermal_camera_plugin.cpp.o"
-  "/home/virtual/workspace/devel/lib/libgazebo_ros_thermal_camera_pink.pdb"
-  "/home/virtual/workspace/devel/lib/libgazebo_ros_thermal_camera_pink.so"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib/libgazebo_ros_thermal_camera_pink.pdb"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib/libgazebo_ros_thermal_camera_pink.so"
 )
 
 # Per-language clean rules from dependency scanning.

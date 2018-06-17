@@ -67,14 +67,14 @@ set(hector_quadrotor_controller_gazebo_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(hector_quadrotor_controller_gazebo_SOURCE_PREFIX /home/virtual/workspace/src/hector_quadrotor_controller_gazebo)
-  set(hector_quadrotor_controller_gazebo_DEVEL_PREFIX /home/virtual/workspace/devel)
+  set(hector_quadrotor_controller_gazebo_SOURCE_PREFIX /home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_quadrotor_controller_gazebo)
+  set(hector_quadrotor_controller_gazebo_DEVEL_PREFIX /home/virtual/RoboCup2018RVRL_Demo/workspace/devel)
   set(hector_quadrotor_controller_gazebo_INSTALL_PREFIX "")
   set(hector_quadrotor_controller_gazebo_PREFIX ${hector_quadrotor_controller_gazebo_DEVEL_PREFIX})
 else()
   set(hector_quadrotor_controller_gazebo_SOURCE_PREFIX "")
   set(hector_quadrotor_controller_gazebo_DEVEL_PREFIX "")
-  set(hector_quadrotor_controller_gazebo_INSTALL_PREFIX /home/virtual/workspace/install)
+  set(hector_quadrotor_controller_gazebo_INSTALL_PREFIX /home/virtual/RoboCup2018RVRL_Demo/workspace/install)
   set(hector_quadrotor_controller_gazebo_PREFIX ${hector_quadrotor_controller_gazebo_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(hector_quadrotor_controller_gazebo_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/virtual/workspace/src/hector_quadrotor_controller_gazebo/include " STREQUAL " ")
+if(NOT "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_quadrotor_controller_gazebo/include " STREQUAL " ")
   set(hector_quadrotor_controller_gazebo_INCLUDE_DIRS "")
-  set(_include_dirs "/home/virtual/workspace/src/hector_quadrotor_controller_gazebo/include")
+  set(_include_dirs "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_quadrotor_controller_gazebo/include")
   if(NOT "https://github.com/tu-darmstadt-ros-pkg/hector_quadrotor/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/tu-darmstadt-ros-pkg/hector_quadrotor/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://ros.org/wiki/hector_quadrotor_controller_gazebo " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/virtual/workspace/src/hector_quadrotor_controller_gazebo/include "
         message(FATAL_ERROR "Project 'hector_quadrotor_controller_gazebo' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'hector_quadrotor_controller_gazebo' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/virtual/workspace/src/hector_quadrotor_controller_gazebo/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'hector_quadrotor_controller_gazebo' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_quadrotor_controller_gazebo/${idir}'.  ${_report}")
     endif()
     _list_append_unique(hector_quadrotor_controller_gazebo_INCLUDE_DIRS ${include})
   endforeach()
@@ -129,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/virtual/workspace/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

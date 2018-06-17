@@ -2,7 +2,7 @@
 
 message(STATUS "hector_uav_msgs: 42 messages, 1 services")
 
-set(MSG_I_FLAGS "-Ihector_uav_msgs:/home/virtual/workspace/src/hector_uav_msgs/msg;-Ihector_uav_msgs:/home/virtual/workspace/devel/share/hector_uav_msgs/msg;-Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ihector_uav_msgs:/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg;-Ihector_uav_msgs:/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg;-Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,219 +17,219 @@ add_custom_target(hector_uav_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/Supply.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/Supply.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/srv/EnableMotors.srv" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawImu.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/srv/EnableMotors.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawImu.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorPWM.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorPWM.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RC.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg" "actionlib_msgs/GoalID:std_msgs/Header:hector_uav_msgs/TakeoffFeedback:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/PoseStamped:geometry_msgs/Pose:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RC.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/srv/EnableMotors.srv" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/srv/EnableMotors.srv" ""
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg" "geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg" "hector_uav_msgs/LandingResult:actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg" "actionlib_msgs/GoalID:hector_uav_msgs/PoseResult:std_msgs/Header:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg" "hector_uav_msgs/TakeoffResult:actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg" "geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg" "geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/HeightCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/HeightCommand.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg" "hector_uav_msgs/TakeoffActionResult:geometry_msgs/PoseStamped:hector_uav_msgs/TakeoffActionFeedback:actionlib_msgs/GoalStatus:hector_uav_msgs/TakeoffResult:hector_uav_msgs/TakeoffFeedback:geometry_msgs/Point:hector_uav_msgs/TakeoffGoal:geometry_msgs/Pose:geometry_msgs/Quaternion:hector_uav_msgs/TakeoffActionGoal:actionlib_msgs/GoalID:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeightCommand.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg" "actionlib_msgs/GoalID:std_msgs/Header:hector_uav_msgs/PoseFeedback:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/PoseStamped:geometry_msgs/Pose:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeightCommand.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Altimeter.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorStatus.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Altimeter.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg" "geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg" "hector_uav_msgs/TakeoffGoal:actionlib_msgs/GoalID:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorCommand.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorCommand.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg" "hector_uav_msgs/PoseGoal:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/PoseStamped:actionlib_msgs/GoalID"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/ControllerState.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/ControllerState.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg" "actionlib_msgs/GoalID:std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/PoseStamped:geometry_msgs/Pose:hector_uav_msgs/LandingGoal"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/Compass.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/Compass.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg" ""
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg" ""
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg" "hector_uav_msgs/LandingResult:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Quaternion:hector_uav_msgs/LandingActionGoal:hector_uav_msgs/LandingActionFeedback:geometry_msgs/Point:hector_uav_msgs/LandingFeedback:geometry_msgs/PoseStamped:hector_uav_msgs/LandingActionResult:actionlib_msgs/GoalID:hector_uav_msgs/LandingGoal:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg" "hector_uav_msgs/PoseFeedback:hector_uav_msgs/PoseGoal:actionlib_msgs/GoalID:std_msgs/Header:geometry_msgs/Quaternion:hector_uav_msgs/PoseActionFeedback:geometry_msgs/Point:hector_uav_msgs/PoseActionGoal:geometry_msgs/PoseStamped:hector_uav_msgs/PoseResult:actionlib_msgs/GoalStatus:geometry_msgs/Pose:hector_uav_msgs/PoseActionResult"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg" "geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg" "hector_uav_msgs/PoseFeedback:actionlib_msgs/GoalID:std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/PoseStamped:geometry_msgs/Pose:actionlib_msgs/GoalStatus"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RC.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Supply.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/RC.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Supply.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg" "actionlib_msgs/GoalID:hector_uav_msgs/TakeoffResult:std_msgs/Header:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg" "hector_uav_msgs/LandingResult:actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg" ""
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg" "geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg" "hector_uav_msgs/PoseGoal:actionlib_msgs/GoalID:hector_uav_msgs/PoseActionGoal:std_msgs/Header:hector_uav_msgs/PoseActionResult:geometry_msgs/Quaternion:geometry_msgs/Point:hector_uav_msgs/PoseFeedback:geometry_msgs/PoseStamped:hector_uav_msgs/PoseResult:hector_uav_msgs/PoseActionFeedback:geometry_msgs/Pose:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg" "actionlib_msgs/GoalID:std_msgs/Header:geometry_msgs/Quaternion:hector_uav_msgs/LandingFeedback:geometry_msgs/Point:geometry_msgs/PoseStamped:geometry_msgs/Pose:actionlib_msgs/GoalStatus"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RawRC.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/RawRC.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Compass.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorCommand.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Compass.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg" ""
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/Altimeter.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ControllerState.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/Altimeter.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ControllerState.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawRC.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawRC.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorPWM.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorPWM.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg" "hector_uav_msgs/PoseGoal:std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/PoseStamped:geometry_msgs/Pose:actionlib_msgs/GoalID"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg" "actionlib_msgs/GoalID:std_msgs/Header:hector_uav_msgs/TakeoffFeedback:geometry_msgs/Point:geometry_msgs/PoseStamped:geometry_msgs/Quaternion:geometry_msgs/Pose:actionlib_msgs/GoalStatus"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ServoCommand.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg" "actionlib_msgs/GoalID:std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Point:hector_uav_msgs/LandingFeedback:geometry_msgs/PoseStamped:geometry_msgs/Pose:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ServoCommand.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg" "hector_uav_msgs/TakeoffGoal:actionlib_msgs/GoalID:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg" "geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/ServoCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/ServoCommand.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg" "hector_uav_msgs/LandingGoal:actionlib_msgs/GoalID:std_msgs/Header:hector_uav_msgs/LandingResult:geometry_msgs/Quaternion:hector_uav_msgs/LandingActionGoal:geometry_msgs/Point:hector_uav_msgs/LandingFeedback:hector_uav_msgs/LandingActionFeedback:geometry_msgs/PoseStamped:geometry_msgs/Pose:hector_uav_msgs/LandingActionResult:actionlib_msgs/GoalStatus"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg" "geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg" "geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RawImu.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorStatus.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/src/hector_uav_msgs/msg/RawImu.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorStatus.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg" "geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/PoseStamped:actionlib_msgs/GoalID:hector_uav_msgs/LandingGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg" "actionlib_msgs/GoalID:std_msgs/Header:hector_uav_msgs/PoseResult:actionlib_msgs/GoalStatus"
 )
 
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg" NAME_WE)
 add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg" "hector_uav_msgs/TakeoffGoal:hector_uav_msgs/TakeoffActionFeedback:std_msgs/Header:hector_uav_msgs/TakeoffFeedback:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/PoseStamped:hector_uav_msgs/TakeoffActionGoal:geometry_msgs/Pose:hector_uav_msgs/TakeoffActionResult:hector_uav_msgs/TakeoffResult:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hector_uav_msgs" "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg" "geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Point"
 )
 
 #
@@ -239,261 +239,261 @@ add_custom_target(_hector_uav_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/Supply.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawImu.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorPWM.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RC.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeightCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Altimeter.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/HeightCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorStatus.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/ControllerState.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/Compass.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Supply.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RC.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RawRC.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/Altimeter.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorPWM.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RawImu.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/ServoCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_cpp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg"
   "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Compass.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ControllerState.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawRC.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ServoCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_cpp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
 )
 
 ### Generating Services
 _generate_srv_cpp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/srv/EnableMotors.srv"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/srv/EnableMotors.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hector_uav_msgs
@@ -511,91 +511,91 @@ add_custom_target(hector_uav_msgs_generate_messages_cpp
 add_dependencies(hector_uav_msgs_generate_messages hector_uav_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/Supply.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/srv/EnableMotors.srv" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawImu.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorPWM.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RC.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/srv/EnableMotors.srv" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/HeightCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeightCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Altimeter.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/ControllerState.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/Compass.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RC.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Supply.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RawRC.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Compass.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/Altimeter.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ControllerState.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawRC.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorPWM.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ServoCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/ServoCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RawImu.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorStatus.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_cpp _hector_uav_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -608,261 +608,261 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS hector_uav_msgs_generate_messages_c
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/Supply.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawImu.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorPWM.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RC.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeightCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Altimeter.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/HeightCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorStatus.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/ControllerState.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/Compass.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Supply.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RC.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RawRC.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/Altimeter.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorPWM.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RawImu.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/ServoCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_eus(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg"
   "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Compass.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ControllerState.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawRC.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ServoCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_eus(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
 )
 
 ### Generating Services
 _generate_srv_eus(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/srv/EnableMotors.srv"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/srv/EnableMotors.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hector_uav_msgs
@@ -880,91 +880,91 @@ add_custom_target(hector_uav_msgs_generate_messages_eus
 add_dependencies(hector_uav_msgs_generate_messages hector_uav_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/Supply.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/srv/EnableMotors.srv" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawImu.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorPWM.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RC.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/srv/EnableMotors.srv" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/HeightCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeightCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Altimeter.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/ControllerState.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/Compass.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RC.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Supply.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RawRC.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Compass.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/Altimeter.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ControllerState.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawRC.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorPWM.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ServoCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/ServoCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RawImu.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorStatus.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_eus _hector_uav_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -977,261 +977,261 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS hector_uav_msgs_generate_messages_e
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/Supply.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawImu.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorPWM.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RC.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeightCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Altimeter.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/HeightCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorStatus.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/ControllerState.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/Compass.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Supply.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RC.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RawRC.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/Altimeter.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorPWM.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RawImu.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/ServoCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_lisp(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg"
   "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Compass.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ControllerState.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawRC.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ServoCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_lisp(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
 )
 
 ### Generating Services
 _generate_srv_lisp(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/srv/EnableMotors.srv"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/srv/EnableMotors.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hector_uav_msgs
@@ -1249,91 +1249,91 @@ add_custom_target(hector_uav_msgs_generate_messages_lisp
 add_dependencies(hector_uav_msgs_generate_messages hector_uav_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/Supply.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/srv/EnableMotors.srv" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawImu.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorPWM.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RC.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/srv/EnableMotors.srv" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/HeightCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeightCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Altimeter.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/ControllerState.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/Compass.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RC.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Supply.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RawRC.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Compass.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/Altimeter.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ControllerState.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawRC.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorPWM.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ServoCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/ServoCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RawImu.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorStatus.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_lisp _hector_uav_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1346,261 +1346,261 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS hector_uav_msgs_generate_messages_l
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/Supply.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawImu.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorPWM.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RC.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeightCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Altimeter.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/HeightCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorStatus.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/ControllerState.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/Compass.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Supply.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RC.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RawRC.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/Altimeter.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorPWM.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RawImu.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/ServoCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg"
   "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Compass.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ControllerState.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawRC.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ServoCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_nodejs(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
 )
 
 ### Generating Services
 _generate_srv_nodejs(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/srv/EnableMotors.srv"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/srv/EnableMotors.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hector_uav_msgs
@@ -1618,91 +1618,91 @@ add_custom_target(hector_uav_msgs_generate_messages_nodejs
 add_dependencies(hector_uav_msgs_generate_messages hector_uav_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/Supply.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/srv/EnableMotors.srv" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawImu.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorPWM.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RC.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/srv/EnableMotors.srv" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/HeightCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeightCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Altimeter.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/ControllerState.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/Compass.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RC.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Supply.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RawRC.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Compass.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/Altimeter.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ControllerState.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawRC.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorPWM.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ServoCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/ServoCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RawImu.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorStatus.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_nodejs _hector_uav_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1715,261 +1715,261 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS hector_uav_msgs_generate_messages_n
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/Supply.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawImu.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorPWM.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RC.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeightCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Altimeter.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/HeightCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorStatus.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/ControllerState.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/Compass.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Supply.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RC.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RawRC.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/Altimeter.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorPWM.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RawImu.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/msg/ServoCommand.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
-)
-_generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
 )
 _generate_msg_py(hector_uav_msgs
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg"
   "${MSG_I_FLAGS}"
-  "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg;/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Compass.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ControllerState.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawRC.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ServoCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
+)
+_generate_msg_py(hector_uav_msgs
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
 )
 
 ### Generating Services
 _generate_srv_py(hector_uav_msgs
-  "/home/virtual/workspace/src/hector_uav_msgs/srv/EnableMotors.srv"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/srv/EnableMotors.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hector_uav_msgs
@@ -1987,91 +1987,91 @@ add_custom_target(hector_uav_msgs_generate_messages_py
 add_dependencies(hector_uav_msgs_generate_messages hector_uav_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/Supply.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/srv/EnableMotors.srv" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawImu.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorPWM.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RC.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/srv/EnableMotors.srv" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/HeightCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/HeightCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/HeadingCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Altimeter.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/VelocityZCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/ControllerState.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/Compass.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/AttitudeCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RC.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Supply.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/ThrustCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RawRC.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/PositionXYCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/Compass.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/VelocityXYCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/Altimeter.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ControllerState.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/RawRC.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/MotorPWM.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RuddersCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/ServoCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/YawrateCommand.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RawMagnetic.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/ServoCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingAction.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/PoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseGoal.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/src/hector_uav_msgs/msg/RawImu.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/msg/MotorStatus.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/LandingActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/PoseActionResult.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/virtual/workspace/devel/share/hector_uav_msgs/msg/TakeoffAction.msg" NAME_WE)
+get_filename_component(_filename "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/hector_uav_msgs/msg/LandingFeedback.msg" NAME_WE)
 add_dependencies(hector_uav_msgs_generate_messages_py _hector_uav_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

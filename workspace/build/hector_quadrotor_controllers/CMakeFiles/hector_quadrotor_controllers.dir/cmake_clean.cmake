@@ -2,8 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/hector_quadrotor_controllers.dir/src/attitude_controller.cpp.o"
   "CMakeFiles/hector_quadrotor_controllers.dir/src/velocity_controller.cpp.o"
   "CMakeFiles/hector_quadrotor_controllers.dir/src/position_controller.cpp.o"
-  "/home/virtual/workspace/devel/lib/libhector_quadrotor_controllers.pdb"
-  "/home/virtual/workspace/devel/lib/libhector_quadrotor_controllers.so"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib/libhector_quadrotor_controllers.pdb"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib/libhector_quadrotor_controllers.so"
 )
 
 # Per-language clean rules from dependency scanning.

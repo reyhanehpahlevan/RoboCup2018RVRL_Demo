@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hector_gazebo_plugins_generate_messages_cpp"
-  "/home/virtual/workspace/devel/include/hector_gazebo_plugins/SetBias.h"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/include/hector_gazebo_plugins/SetBias.h"
 )
 
 # Per-language clean rules from dependency scanning.

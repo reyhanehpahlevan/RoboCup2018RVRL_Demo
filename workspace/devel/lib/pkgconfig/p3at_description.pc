@@ -1,8 +1,8 @@
-prefix=/home/virtual/workspace/devel
+prefix=/home/virtual/RoboCup2018RVRL_Demo/workspace/devel
 
 Name: p3at_description
 Description: Description of p3at_description
 Version: 1.0.0
 Cflags: 
-Libs: -L/home/virtual/workspace/devel/lib 
+Libs: -L/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib 
 Requires: 

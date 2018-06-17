@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/virtual/workspace/devel:$CMAKE_PREFIX_PATH"
-export PWD="/home/virtual/workspace/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/virtual/workspace/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/virtual/workspace/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/virtual/RoboCup2018RVRL_Demo/workspace/devel:$CMAKE_PREFIX_PATH"
+export PWD="/home/virtual/RoboCup2018RVRL_Demo/workspace/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/virtual/RoboCup2018RVRL_Demo/workspace/src:$ROS_PACKAGE_PATH"

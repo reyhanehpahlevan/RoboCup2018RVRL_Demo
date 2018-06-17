@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "quadrotor_description"
-PROJECT_SPACE_DIR = "/home/virtual/workspace/install"
+PROJECT_SPACE_DIR = "/home/virtual/RoboCup2018RVRL_Demo/workspace/install"
 PROJECT_VERSION = "0.0.0"

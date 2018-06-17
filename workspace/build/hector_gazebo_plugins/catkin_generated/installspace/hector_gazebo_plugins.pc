@@ -1,8 +1,8 @@
-prefix=/home/virtual/workspace/install
+prefix=/home/virtual/RoboCup2018RVRL_Demo/workspace/install
 
 Name: hector_gazebo_plugins
 Description: Description of hector_gazebo_plugins
 Version: 0.5.0
-Cflags: -I/home/virtual/workspace/install/include
-Libs: -L/home/virtual/workspace/install/lib 
+Cflags: -I/home/virtual/RoboCup2018RVRL_Demo/workspace/install/include
+Libs: -L/home/virtual/RoboCup2018RVRL_Demo/workspace/install/lib 
 Requires: roscpp std_msgs geometry_msgs nav_msgs tf message_runtime

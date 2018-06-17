@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 # generated from dynamic_reconfigure/cmake/setup_custom_pythonpath.sh.in
 
-PYTHONPATH=/home/virtual/workspace/devel/lib/python2.7/dist-packages:$PYTHONPATH
+PYTHONPATH=/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib/python2.7/dist-packages:$PYTHONPATH
 exec "$@"

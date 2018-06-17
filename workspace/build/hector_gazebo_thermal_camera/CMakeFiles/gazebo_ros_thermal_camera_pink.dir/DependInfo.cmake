@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/virtual/workspace/src/hector_gazebo_thermal_camera/src/gazebo_ros_thermal_camera_plugin.cpp" "/home/virtual/workspace/build/hector_gazebo_thermal_camera/CMakeFiles/gazebo_ros_thermal_camera_pink.dir/src/gazebo_ros_thermal_camera_plugin.cpp.o"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_gazebo_thermal_camera/src/gazebo_ros_thermal_camera_plugin.cpp" "/home/virtual/RoboCup2018RVRL_Demo/workspace/build/hector_gazebo_thermal_camera/CMakeFiles/gazebo_ros_thermal_camera_pink.dir/src/gazebo_ros_thermal_camera_plugin.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -19,7 +19,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/virtual/workspace/src/hector_gazebo_thermal_camera/include"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_gazebo_thermal_camera/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/gazebo-8"

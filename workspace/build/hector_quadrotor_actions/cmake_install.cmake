@@ -1,8 +1,8 @@
-# Install script for directory: /home/virtual/workspace/src/hector_quadrotor_actions
+# Install script for directory: /home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_quadrotor_actions
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/virtual/workspace/install")
+  set(CMAKE_INSTALL_PREFIX "/home/virtual/RoboCup2018RVRL_Demo/workspace/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,18 +33,18 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/virtual/workspace/build/hector_quadrotor_actions/catkin_generated/installspace/hector_quadrotor_actions.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/virtual/RoboCup2018RVRL_Demo/workspace/build/hector_quadrotor_actions/catkin_generated/installspace/hector_quadrotor_actions.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_quadrotor_actions/cmake" TYPE FILE FILES
-    "/home/virtual/workspace/build/hector_quadrotor_actions/catkin_generated/installspace/hector_quadrotor_actionsConfig.cmake"
-    "/home/virtual/workspace/build/hector_quadrotor_actions/catkin_generated/installspace/hector_quadrotor_actionsConfig-version.cmake"
+    "/home/virtual/RoboCup2018RVRL_Demo/workspace/build/hector_quadrotor_actions/catkin_generated/installspace/hector_quadrotor_actionsConfig.cmake"
+    "/home/virtual/RoboCup2018RVRL_Demo/workspace/build/hector_quadrotor_actions/catkin_generated/installspace/hector_quadrotor_actionsConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_quadrotor_actions" TYPE FILE FILES "/home/virtual/workspace/src/hector_quadrotor_actions/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_quadrotor_actions" TYPE FILE FILES "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_quadrotor_actions/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -54,12 +54,12 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions/landing_action"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions" TYPE EXECUTABLE FILES "/home/virtual/workspace/devel/lib/hector_quadrotor_actions/landing_action")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions" TYPE EXECUTABLE FILES "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib/hector_quadrotor_actions/landing_action")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions/landing_action" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions/landing_action")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions/landing_action"
-         OLD_RPATH "/home/virtual/workspace/devel/lib:/opt/ros/kinetic/lib:"
+         OLD_RPATH "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib:/opt/ros/kinetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions/landing_action")
@@ -74,12 +74,12 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions/pose_action"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions" TYPE EXECUTABLE FILES "/home/virtual/workspace/devel/lib/hector_quadrotor_actions/pose_action")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions" TYPE EXECUTABLE FILES "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib/hector_quadrotor_actions/pose_action")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions/pose_action" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions/pose_action")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions/pose_action"
-         OLD_RPATH "/home/virtual/workspace/devel/lib:/opt/ros/kinetic/lib:"
+         OLD_RPATH "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib:/opt/ros/kinetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions/pose_action")
@@ -94,12 +94,12 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions/takeoff_action"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions" TYPE EXECUTABLE FILES "/home/virtual/workspace/devel/lib/hector_quadrotor_actions/takeoff_action")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions" TYPE EXECUTABLE FILES "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib/hector_quadrotor_actions/takeoff_action")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions/takeoff_action" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions/takeoff_action")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions/takeoff_action"
-         OLD_RPATH "/home/virtual/workspace/devel/lib:/opt/ros/kinetic/lib:"
+         OLD_RPATH "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib:/opt/ros/kinetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hector_quadrotor_actions/takeoff_action")
@@ -108,6 +108,6 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_quadrotor_actions" TYPE DIRECTORY FILES "/home/virtual/workspace/src/hector_quadrotor_actions/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_quadrotor_actions" TYPE DIRECTORY FILES "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_quadrotor_actions/launch")
 endif()
 

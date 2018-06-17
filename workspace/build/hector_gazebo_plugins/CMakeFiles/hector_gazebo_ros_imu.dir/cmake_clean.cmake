@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hector_gazebo_ros_imu.dir/src/gazebo_ros_imu.cpp.o"
-  "/home/virtual/workspace/devel/lib/libhector_gazebo_ros_imu.pdb"
-  "/home/virtual/workspace/devel/lib/libhector_gazebo_ros_imu.so"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib/libhector_gazebo_ros_imu.pdb"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib/libhector_gazebo_ros_imu.so"
 )
 
 # Per-language clean rules from dependency scanning.

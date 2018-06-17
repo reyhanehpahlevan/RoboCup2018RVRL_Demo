@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"hector_quadrotor_actions\"
 
-CXX_INCLUDES = -I/home/virtual/workspace/src/hector_quadrotor_actions/include -I/home/virtual/workspace/devel/include -I/home/virtual/workspace/src/hector_quadrotor_interface/include -I/home/virtual/workspace/src/hector_uav_msgs/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 
+CXX_INCLUDES = -I/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_quadrotor_actions/include -I/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/include -I/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_quadrotor_interface/include -I/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 
 

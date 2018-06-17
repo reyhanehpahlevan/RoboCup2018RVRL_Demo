@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gazebo_ros_force_based_move.dir/src/gazebo_ros_force_based_move.cpp.o"
-  "/home/virtual/workspace/devel/lib/libgazebo_ros_force_based_move.pdb"
-  "/home/virtual/workspace/devel/lib/libgazebo_ros_force_based_move.so"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib/libgazebo_ros_force_based_move.pdb"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib/libgazebo_ros_force_based_move.so"
 )
 
 # Per-language clean rules from dependency scanning.

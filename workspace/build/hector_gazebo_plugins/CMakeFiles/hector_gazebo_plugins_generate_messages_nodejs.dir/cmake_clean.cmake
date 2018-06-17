@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hector_gazebo_plugins_generate_messages_nodejs"
-  "/home/virtual/workspace/devel/share/gennodejs/ros/hector_gazebo_plugins/srv/SetBias.js"
+  "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/share/gennodejs/ros/hector_gazebo_plugins/srv/SetBias.js"
 )
 
 # Per-language clean rules from dependency scanning.

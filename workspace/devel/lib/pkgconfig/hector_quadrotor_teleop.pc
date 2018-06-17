@@ -1,8 +1,8 @@
-prefix=/home/virtual/workspace/devel
+prefix=/home/virtual/RoboCup2018RVRL_Demo/workspace/devel
 
 Name: hector_quadrotor_teleop
 Description: Description of hector_quadrotor_teleop
 Version: 0.3.5
 Cflags: 
-Libs: -L/home/virtual/workspace/devel/lib 
+Libs: -L/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib 
 Requires: roscpp sensor_msgs geometry_msgs hector_uav_msgs

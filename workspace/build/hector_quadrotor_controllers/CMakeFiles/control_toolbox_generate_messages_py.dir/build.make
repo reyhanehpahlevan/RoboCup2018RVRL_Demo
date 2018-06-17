@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/virtual/workspace/src
+CMAKE_SOURCE_DIR = /home/virtual/RoboCup2018RVRL_Demo/workspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/virtual/workspace/build
+CMAKE_BINARY_DIR = /home/virtual/RoboCup2018RVRL_Demo/workspace/build
 
 # Utility rule file for control_toolbox_generate_messages_py.
 
@@ -63,10 +63,10 @@ hector_quadrotor_controllers/CMakeFiles/control_toolbox_generate_messages_py.dir
 .PHONY : hector_quadrotor_controllers/CMakeFiles/control_toolbox_generate_messages_py.dir/build
 
 hector_quadrotor_controllers/CMakeFiles/control_toolbox_generate_messages_py.dir/clean:
-	cd /home/virtual/workspace/build/hector_quadrotor_controllers && $(CMAKE_COMMAND) -P CMakeFiles/control_toolbox_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/virtual/RoboCup2018RVRL_Demo/workspace/build/hector_quadrotor_controllers && $(CMAKE_COMMAND) -P CMakeFiles/control_toolbox_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : hector_quadrotor_controllers/CMakeFiles/control_toolbox_generate_messages_py.dir/clean
 
 hector_quadrotor_controllers/CMakeFiles/control_toolbox_generate_messages_py.dir/depend:
-	cd /home/virtual/workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/virtual/workspace/src /home/virtual/workspace/src/hector_quadrotor_controllers /home/virtual/workspace/build /home/virtual/workspace/build/hector_quadrotor_controllers /home/virtual/workspace/build/hector_quadrotor_controllers/CMakeFiles/control_toolbox_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/virtual/RoboCup2018RVRL_Demo/workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/virtual/RoboCup2018RVRL_Demo/workspace/src /home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_quadrotor_controllers /home/virtual/RoboCup2018RVRL_Demo/workspace/build /home/virtual/RoboCup2018RVRL_Demo/workspace/build/hector_quadrotor_controllers /home/virtual/RoboCup2018RVRL_Demo/workspace/build/hector_quadrotor_controllers/CMakeFiles/control_toolbox_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : hector_quadrotor_controllers/CMakeFiles/control_toolbox_generate_messages_py.dir/depend
 

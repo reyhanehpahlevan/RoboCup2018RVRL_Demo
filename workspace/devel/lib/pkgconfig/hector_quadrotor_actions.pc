@@ -1,8 +1,8 @@
-prefix=/home/virtual/workspace/devel
+prefix=/home/virtual/RoboCup2018RVRL_Demo/workspace/devel
 
 Name: hector_quadrotor_actions
 Description: Description of hector_quadrotor_actions
 Version: 0.0.0
-Cflags: -I/home/virtual/workspace/src/hector_quadrotor_actions/include
-Libs: -L/home/virtual/workspace/devel/lib 
+Cflags: -I/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_quadrotor_actions/include
+Libs: -L/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib 
 Requires: roscpp

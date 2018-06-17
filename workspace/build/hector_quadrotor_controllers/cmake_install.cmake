@@ -1,8 +1,8 @@
-# Install script for directory: /home/virtual/workspace/src/hector_quadrotor_controllers
+# Install script for directory: /home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_quadrotor_controllers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/virtual/workspace/install")
+  set(CMAKE_INSTALL_PREFIX "/home/virtual/RoboCup2018RVRL_Demo/workspace/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,18 +33,18 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/virtual/workspace/build/hector_quadrotor_controllers/catkin_generated/installspace/hector_quadrotor_controllers.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/virtual/RoboCup2018RVRL_Demo/workspace/build/hector_quadrotor_controllers/catkin_generated/installspace/hector_quadrotor_controllers.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_quadrotor_controllers/cmake" TYPE FILE FILES
-    "/home/virtual/workspace/build/hector_quadrotor_controllers/catkin_generated/installspace/hector_quadrotor_controllersConfig.cmake"
-    "/home/virtual/workspace/build/hector_quadrotor_controllers/catkin_generated/installspace/hector_quadrotor_controllersConfig-version.cmake"
+    "/home/virtual/RoboCup2018RVRL_Demo/workspace/build/hector_quadrotor_controllers/catkin_generated/installspace/hector_quadrotor_controllersConfig.cmake"
+    "/home/virtual/RoboCup2018RVRL_Demo/workspace/build/hector_quadrotor_controllers/catkin_generated/installspace/hector_quadrotor_controllersConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_quadrotor_controllers" TYPE FILE FILES "/home/virtual/workspace/src/hector_quadrotor_controllers/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_quadrotor_controllers" TYPE FILE FILES "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_quadrotor_controllers/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -54,12 +54,12 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libhector_quadrotor_controllers.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/virtual/workspace/devel/lib/libhector_quadrotor_controllers.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib/libhector_quadrotor_controllers.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libhector_quadrotor_controllers.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libhector_quadrotor_controllers.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libhector_quadrotor_controllers.so"
-         OLD_RPATH "/opt/ros/kinetic/lib:/home/virtual/workspace/devel/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libhector_quadrotor_controllers.so")
@@ -69,12 +69,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_quadrotor_controllers" TYPE DIRECTORY FILES
-    "/home/virtual/workspace/src/hector_quadrotor_controllers/launch"
-    "/home/virtual/workspace/src/hector_quadrotor_controllers/params"
+    "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_quadrotor_controllers/launch"
+    "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_quadrotor_controllers/params"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_quadrotor_controllers" TYPE FILE FILES "/home/virtual/workspace/src/hector_quadrotor_controllers/plugin.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_quadrotor_controllers" TYPE FILE FILES "/home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_quadrotor_controllers/plugin.xml")
 endif()
 

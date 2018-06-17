@@ -1,8 +1,8 @@
-prefix=/home/virtual/workspace/devel
+prefix=/home/virtual/RoboCup2018RVRL_Demo/workspace/devel
 
 Name: setup
 Description: Description of setup
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/virtual/workspace/devel/lib 
+Libs: -L/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib 
 Requires: 

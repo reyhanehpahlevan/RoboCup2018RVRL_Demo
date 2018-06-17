@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/virtual/workspace/src
+CMAKE_SOURCE_DIR = /home/virtual/RoboCup2018RVRL_Demo/workspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/virtual/workspace/build
+CMAKE_BINARY_DIR = /home/virtual/RoboCup2018RVRL_Demo/workspace/build
 
 # Utility rule file for roscpp_generate_messages_py.
 
@@ -63,10 +63,10 @@ bring_up/CMakeFiles/roscpp_generate_messages_py.dir/build: roscpp_generate_messa
 .PHONY : bring_up/CMakeFiles/roscpp_generate_messages_py.dir/build
 
 bring_up/CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	cd /home/virtual/workspace/build/bring_up && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/virtual/RoboCup2018RVRL_Demo/workspace/build/bring_up && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : bring_up/CMakeFiles/roscpp_generate_messages_py.dir/clean
 
 bring_up/CMakeFiles/roscpp_generate_messages_py.dir/depend:
-	cd /home/virtual/workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/virtual/workspace/src /home/virtual/workspace/src/bring_up /home/virtual/workspace/build /home/virtual/workspace/build/bring_up /home/virtual/workspace/build/bring_up/CMakeFiles/roscpp_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/virtual/RoboCup2018RVRL_Demo/workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/virtual/RoboCup2018RVRL_Demo/workspace/src /home/virtual/RoboCup2018RVRL_Demo/workspace/src/bring_up /home/virtual/RoboCup2018RVRL_Demo/workspace/build /home/virtual/RoboCup2018RVRL_Demo/workspace/build/bring_up /home/virtual/RoboCup2018RVRL_Demo/workspace/build/bring_up/CMakeFiles/roscpp_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bring_up/CMakeFiles/roscpp_generate_messages_py.dir/depend
 

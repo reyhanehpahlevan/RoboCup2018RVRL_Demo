@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/virtual/workspace/src
+CMAKE_SOURCE_DIR = /home/virtual/RoboCup2018RVRL_Demo/workspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/virtual/workspace/build
+CMAKE_BINARY_DIR = /home/virtual/RoboCup2018RVRL_Demo/workspace/build
 
 # Utility rule file for actionlib_msgs_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ hector_uav_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build: acti
 .PHONY : hector_uav_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
 
 hector_uav_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean:
-	cd /home/virtual/workspace/build/hector_uav_msgs && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/virtual/RoboCup2018RVRL_Demo/workspace/build/hector_uav_msgs && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : hector_uav_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
 
 hector_uav_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/depend:
-	cd /home/virtual/workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/virtual/workspace/src /home/virtual/workspace/src/hector_uav_msgs /home/virtual/workspace/build /home/virtual/workspace/build/hector_uav_msgs /home/virtual/workspace/build/hector_uav_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/virtual/RoboCup2018RVRL_Demo/workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/virtual/RoboCup2018RVRL_Demo/workspace/src /home/virtual/RoboCup2018RVRL_Demo/workspace/src/hector_uav_msgs /home/virtual/RoboCup2018RVRL_Demo/workspace/build /home/virtual/RoboCup2018RVRL_Demo/workspace/build/hector_uav_msgs /home/virtual/RoboCup2018RVRL_Demo/workspace/build/hector_uav_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : hector_uav_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/depend
 

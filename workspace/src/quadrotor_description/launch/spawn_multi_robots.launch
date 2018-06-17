@@ -1,18 +1,18 @@
 <?xml version="1.0" ?>
 <launch>
   <include file="$(find quadrotor_description)/launch/robot_spawn.launch">
-    <arg name="robot_name" value="robot3"/>
+    <arg name="robot_name" value="ground"/>
     <arg name="xcoordinate" value="0"/>
     <arg name="ycoordinate" value="3"/>
   </include> 
 
   <include file="$(find quadrotor_description)/launch/robot_spawn.launch">
-    <arg name="robot_name" value="robot4"/>
+    <arg name="robot_name" value="robot0"/>
     <arg name="xcoordinate" value="-15"/>
     <arg name="ycoordinate" value="0"/>
   </include>
   <include file="$(find quadrotor_description)/launch/robot_spawn.launch">
-    <arg name="robot_name" value="robot5"/>
+    <arg name="robot_name" value="robot1"/>
     <arg name="xcoordinate" value="15"/>
     <arg name="ycoordinate" value="0"/>
   </include>
