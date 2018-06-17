@@ -5,7 +5,7 @@ Open the terminal!
 
 -------------step 2--------------  
 Write the following code in the terminal and press enter  
-      $sudo gedit /etc/hostname
+    $sudo gedit /etc/hostname
 
 Delete the existing name and write the following name instead:
 
@@ -25,7 +25,7 @@ Change the existing information to match the following lines:
 
 -------------step 4--------------  
 Write the following code in the terminal and press enter
-	sudo gedit ~/.bashrc
+    $sudo gedit ~/.bashrc
 
 Add the following lines at the end of the file:
 
