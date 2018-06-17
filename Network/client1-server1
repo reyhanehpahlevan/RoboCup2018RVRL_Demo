@@ -41,7 +41,7 @@ close the terminal!
 Go to Network connections and add a ethernet network:
 change the name to "client1"
 go to IPv4 Settings Tab and add the address below:
-address:10.10.0.1
+address:10.10.0.11
 netmask:16
 -------------step 7--------------
 connect to server by Lan cable and connect to client1 on the network connections 
