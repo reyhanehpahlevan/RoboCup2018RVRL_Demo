@@ -1,11 +1,11 @@
-Network information for "client1" connection to "server1"
+## Network information for "client1" connection to "server1"
 
--------------step 1--------------
+-------------step 1--------------  
 Open the terminal!
 
 -------------step 2--------------
 Write the following code in the terminal and press enter
-	sudo gedit /etc/hostname
+	        sudo gedit /etc/hostname
 
 Delete the existing name and write the following name instead:
 
