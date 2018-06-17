@@ -7,7 +7,7 @@ check the network folder and setup your computer based on the coressponding file
   
 
 ## Server Setup 
-  $ cd ~/RoboCup2018RVRL_Demo/workspace
+  $ cd ~/RoboCup2018RVRL_Demo/workspace  
   $ rm -rf build/  
   $ rm -rf devel/  
   $ catkin_make  
