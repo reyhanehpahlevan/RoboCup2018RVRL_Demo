@@ -1,0 +1,31 @@
+global_frame: odom
+robot_base_frame: chassis
+update_frequency: 7.0
+publish_frequency: 10.0
+static_map: false
+resolution: 0.1
+footprint: [ [0.3602, -0.0708], [0.274, -0.0708], [0.274, -0.254], [-0.274, -0.274], [-0.274, 0.274], [0.274, 0.274], [0.274, 0.0708], [0.3602, 0.0708] ]
+footprint_padding: 0.1
+transform_tolerance: 0.5
+track_unknown_space: true
+map_type: costmap
+plugins:
+- {name: explore_boundary,    type: "frontier_exploration::BoundedExploreLayer"}
+#Can disable sensor layer if gmapping is fast enough to update scans
+- {name: obstacles_laser,     type: "costmap_2d::ObstacleLayer"}
+- {name: inflation,           type: "costmap_2d::InflationLayer"}
+
+obstacles_laser:
+   observation_sources: laser_scan_sensor
+   laser_scan_sensor: {sensor_frame: hokuyo_frame, data_type: LaserScan, topic: hokuyo, marking: true, clearing: true, raytrace_range: 7.5, obstacle_range: 6.5}
+   track_unknown_space: true
+
+inflation:
+   inflation_radius: 1.8
+   cost_scaling_factor: 2.5
+
+explore_boundary:
+    resize_to_boundary: true
+    frontier_travel_point: closest
+  #set to false for gmapping, true if re-exploring a known area
+    explore_clear_space: false

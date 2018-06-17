@@ -1,0 +1,8 @@
+prefix=/home/virtual/workspace/install
+
+Name: bring_up
+Description: Description of bring_up
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/virtual/workspace/install/lib 
+Requires: geometry_msgs roscpp

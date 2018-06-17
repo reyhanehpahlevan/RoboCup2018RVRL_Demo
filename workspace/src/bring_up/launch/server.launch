@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<launch>
+  <param name="use_sim_time" value="true" />
+
+
+<include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" default="$(find bring_up)/worlds/indoor_light_victims.world"/>
+  </include>
+
+<!--   
+ <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" default="$(find bring_up)/worlds/victim_test.world"/>
+  </include>
+
+<include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" default="$(find bring_up)/worlds/indoor_light_victims.world"/>
+  </include>
+
+ <include file="$(find gazebo_ros)/launch/willowgarage_world.launch">
+  </include>
+
+ <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" default="$(find bring_up)/worlds/super_world.world"/>
+  </include>
+<include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" default="$(find bring_up)/worlds/my_world.world"/>
+  </include>
+
+ <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" default="$(find bring_up)/worlds/test.world"/>
+  </include>
+-->
+
+
+</launch>

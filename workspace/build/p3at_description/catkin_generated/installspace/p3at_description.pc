@@ -1,0 +1,8 @@
+prefix=/home/virtual/workspace/install
+
+Name: p3at_description
+Description: Description of p3at_description
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/virtual/workspace/install/lib 
+Requires: 

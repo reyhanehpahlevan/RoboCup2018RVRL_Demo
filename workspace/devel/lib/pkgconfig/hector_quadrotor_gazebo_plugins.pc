@@ -1,0 +1,8 @@
+prefix=/home/virtual/workspace/devel
+
+Name: hector_quadrotor_gazebo_plugins
+Description: Description of hector_quadrotor_gazebo_plugins
+Version: 0.3.5
+Cflags: -I/home/virtual/workspace/src/hector_quadrotor_gazebo_plugins/include
+Libs: -L/home/virtual/workspace/devel/lib 
+Requires: roscpp hector_gazebo_plugins geometry_msgs hector_uav_msgs dynamic_reconfigure

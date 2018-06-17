@@ -1,0 +1,8 @@
+prefix=/home/virtual/workspace/devel
+
+Name: quadrotor_description
+Description: Description of quadrotor_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/virtual/workspace/devel/lib 
+Requires: 

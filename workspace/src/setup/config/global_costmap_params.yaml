@@ -1,0 +1,13 @@
+global_costmap:
+  global_frame: /map
+  robot_base_frame: chassis
+  resolution: 0.1
+  rolling_window:             false
+  track_unknown_space:        true
+  width:                      30.0
+  height:                     30.0
+
+
+  plugins:
+     - {name: static,                    type: "costmap_2d::StaticLayer"}
+     - {name: inflation,                 type: "costmap_2d::InflationLayer"}

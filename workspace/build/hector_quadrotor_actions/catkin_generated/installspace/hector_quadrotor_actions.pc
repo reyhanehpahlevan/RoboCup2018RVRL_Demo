@@ -1,0 +1,8 @@
+prefix=/home/virtual/workspace/install
+
+Name: hector_quadrotor_actions
+Description: Description of hector_quadrotor_actions
+Version: 0.0.0
+Cflags: -I/home/virtual/workspace/install/include
+Libs: -L/home/virtual/workspace/install/lib 
+Requires: roscpp

@@ -1,0 +1,287 @@
+<!--
+<?xml bersion="1.0" ?>
+<robot name="my_robot">
+  <link name="arm1">
+    <inertial>
+      <mass value="0" />
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="0.05 0 0.165" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.03" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.05 0 0.165" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.03" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="arm2">
+    <inertial>
+      <mass value="0" />
+      <origin xyz="0.25 2.1593837829e-16 1.66533453694e-16" rpy="0 -0 0" />
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz=".3 0 .22" rpy="0 0 0" />
+      <geometry>
+        <box size="0.5 0.05 0.05" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz=".3 0 .22" rpy="0 0 0" />
+      <geometry>
+        <box size="0.5 0.05 0.05" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="arm3">
+    <inertial>
+      <mass value="0" />
+      <origin xyz="0.25 2.1593837829e-16 -2.22044604925e-16" rpy="0 -0 0" />
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz=".85 0 .22" rpy="0 0 0" />
+      <geometry>
+        <box size="0.5 0.05 0.05" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz=".85 0 .22" rpy="0 0 0" />
+      <geometry>
+        <box size="0.5 0.05 0.05" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="hand">
+    <inertial>
+      <mass value="0" />
+      <origin xyz="0.075 2.1593837829e-16 -1.66533453694e-16" rpy="0 -0 0" />
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="1.225 0 .22" rpy="0 0 0" />
+      <geometry>
+        <box size="0.15 0.08 0.03" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="1.225 0 .22" rpy="0 0 0" />
+      <geometry>
+        <box size="0.15 0.08 0.03" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="finger1">
+    <inertial>
+      <mass value="0" />
+      <origin xyz="-1.28 -0.025 -0.235" rpy="0 -0 0" />
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="1.28 .09 .25" rpy="0 0 0" />
+      <geometry>
+        <box size="0.03 0.15 0.03" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="1.28 .09 .25" rpy="0 0 0" />
+      <geometry>
+        <box size="0.03 0.15 0.03" />
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="1.325 .2 .22" rpy="0 0 -0.785" />
+      <geometry>
+        <box size="0.03 0.15 0.03" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="1.325 .2 .22" rpy="0 0 -0.785" />
+      <geometry>
+        <box size="0.03 0.15 0.03" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="finger2">
+    <inertial>
+      <mass value="0" />
+      <origin xyz="-1.28 0.025 -0.235" rpy="0 -0 0" />
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="1.28 -0.09 .25" rpy="0 0 0" />
+      <geometry>
+        <box size="0.03 0.15 0.03" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="1.28 -0.09 .25" rpy="0 0 0" />
+      <geometry>
+        <box size="0.03 0.15 0.03" />
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="1.325 -0.2 .22" rpy="0 0 0.785" />
+      <geometry>
+        <box size="0.03 0.15 0.03" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="1.325 -0.2 .22" rpy="0 0 0.785" />
+      <geometry>
+        <box size="0.03 0.15 0.03" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="left_wheel">
+    <inertial>
+      <mass value="0" />
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="0.1 0.13 0.1" rpy="0 1.5708 1.5708"  />
+      <geometry>
+        <cylinder radius="0.1" length="0.05" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.1 0.13 0.1" rpy="0 1.5708 1.5708" />
+      <geometry>
+        <cylinder radius="0.1" length="0.05" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="right_wheel">
+    <inertial>
+      <mass value="0" />
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="0.1 -0.13 0.1" rpy="0 1.5708 1.5708" />
+      <geometry>
+        <cylinder radius="0.1" length="0.05" />
+      </geometry>
+    </visual>
+    <collision>
+    <origin xyz="0.1 -0.13 0.1" rpy="0 1.5708 1.5708" />
+      <geometry>
+        <cylinder radius="0.1" length="0.05" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="chassis">
+    <inertial>
+      <mass value="0" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 .1" rpy="0 0 0" />
+      <geometry>
+        <box size="0.4 0.2 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 .1" rpy="0 0 0" />
+      <geometry>
+        <box size="0.4 0.2 0.1" />
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="-0.15 0.0 0.05" rpy="0.0 -0.0 0.0" />
+      <geometry>
+        <sphere radius="0.05" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.15 0.0 0.05" rpy="0.0 -0.0 0.0" />
+      <geometry>
+        <sphere radius="0.05" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="sholder_y" type="revolute">
+    <origin xyz="0.05 0.0 0.065" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0.0 0.0 1.0" />
+    <parent link="chassis" />
+    <child link="arm1" />
+    <limit lower="-inf" upper="inf" effort="100" velocity="inf" />
+  </joint>
+  <joint name="sholder_p" type="revolute">
+    <origin xyz="6.93889390391e-17 2.22044604925e-16 0.055" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0.0 1.0 0.0" />
+    <parent link="arm1" />
+    <child link="arm2" />
+    <limit lower="-inf" upper="inf" effort="100" velocity="inf" />
+  </joint>
+  <joint name="elbow" type="revolute">
+    <origin xyz="0.55 2.1593837829e-16 2.22044604925e-16" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0.0 1.0 0.0" />
+    <parent link="arm2" />
+    <child link="arm3" />
+    <limit lower="-inf" upper="inf" effort="100" velocity="inf" />
+  </joint>
+  <joint name="wrist" type="revolute">
+    <origin xyz="0.55 2.1593837829e-16 -2.22044604925e-16" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0.0 1.0 0.0" />
+    <parent link="arm3" />
+    <child link="hand" />
+    <limit lower="-inf" upper="inf" effort="100" velocity="inf" />
+  </joint>
+  <joint name="left_finger" type="revolute">
+    <origin xyz="0.13 0.025 0.015" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0.0 0.0 1.0" />
+    <parent link="hand" />
+    <child link="finger1" />
+    <limit lower="-inf" upper="inf" effort="100" velocity="inf" />
+  </joint>
+  <joint name="right_finger" type="revolute">
+    <origin xyz="0.13 -0.025 0.015" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0.0 0.0 1.0" />
+    <parent link="hand" />
+    <child link="finger2" />
+    <limit lower="-inf" upper="inf" effort="100" velocity="inf" />
+  </joint>
+  <joint name="left_wheel_hinge" type="revolute">
+    <origin xyz="0.1 0.13 -1.11022302463e-16" rpy="1.15255887787e-12 1.5707 1.5707" />
+    <axis xyz="-0.999999995361 3.37789963101e-16 9.63267947475e-05" />
+    <parent link="chassis" />
+    <child link="left_wheel" />
+    <limit lower="-inf" upper="inf" effort="100" velocity="inf" />
+  </joint>
+  <joint name="right_wheel_hinge" type="revolute">
+    <origin xyz="0.1 -0.13 -1.11022302463e-16" rpy="1.15255887787e-12 1.5707 1.5707" />
+    <axis xyz="-0.999999995361 3.37789963101e-16 9.63267947475e-05" />
+    <parent link="chassis" />
+    <child link="right_wheel" />
+    <limit lower="-inf" upper="inf" effort="100" velocity="inf" />
+  </joint>
+  
+  <gazebo>
+    <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
+      <right_wheel>right_wheel_hinge</right_wheel>
+      <left_wheel>left_wheel_hinge</left_wheel>
+    </plugin>
+  </gazebo>
+</robot>
+-->

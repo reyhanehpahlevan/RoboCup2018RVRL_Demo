@@ -1,0 +1,8 @@
+prefix=/home/virtual/workspace/install
+
+Name: setup
+Description: Description of setup
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/virtual/workspace/install/lib 
+Requires: 

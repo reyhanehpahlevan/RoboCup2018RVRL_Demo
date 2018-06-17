@@ -1,0 +1,8 @@
+prefix=/home/virtual/workspace/install
+
+Name: hector_gazebo_thermal_camera
+Description: Description of hector_gazebo_thermal_camera
+Version: 0.5.0
+Cflags: -I/home/virtual/workspace/install/include
+Libs: -L/home/virtual/workspace/install/lib 
+Requires: gazebo_plugins

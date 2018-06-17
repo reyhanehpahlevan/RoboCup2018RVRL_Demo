@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+
+	<node pkg="mrl_map_server" type="mrl_map_server" name="mrl_map_server">
+	       <param name="robots_num" value="1"/>
+	</node>
+
+	<node pkg="tf" type="static_transform_publisher" name="world" args="0 0 0 0 0 0 1 world multi_map_frame 100" />
+
+	<node pkg="hector_map_server" type="hector_map_server" name="hector_map_server" output="screen" respawn="true" launch-prefix="nice -n 15">
+		<remap from="map" to="/multi_map" />
+		<remap from="/hector_map_server/get_distance_to_obstacle" to="/get_distance_to_obstacle" />
+	</node>
+
+</launch>
