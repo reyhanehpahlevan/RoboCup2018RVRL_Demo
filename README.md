@@ -1,2 +1,2 @@
-# RoboCup2018RVRL_Demo
-Robocup 2018 packages and informations
+# RoboCup2018 Rescue Simulation Virtual Robot League 
+
