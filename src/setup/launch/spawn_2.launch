@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<launch>
+  <include file="$(find setup)/launch/robot_spawn.launch">
+    <arg name="robot_name" value="robot0"/>
+    <arg name="ycoordinate" value="-4"/>
+    <arg name="xcoordinate" value="-46"/>
+  </include>
+
+
+ <!-- <include file="$(find setup)/launch/robot_spawn.launch">
+    <arg name="robot_name" value="robot3"/>
+    <arg name="xcoordinate" value="8"/>
+    <arg name="ycoordinate" value="5"/>
+  </include>  -->  
+</launch>

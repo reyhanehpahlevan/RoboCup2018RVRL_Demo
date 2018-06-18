@@ -1,0 +1,11 @@
+local_costmap:
+  global_frame: odom
+  robot_base_frame: chassis
+  static_map: false
+  rolling_window: true
+  width: 6.8
+  height: 6.8
+  resolution: 0.08
+  plugins:
+     - {name: obstacles_costmap2d,       type: "costmap_2d::ObstacleLayer"}
+     - {name: inflation,                 type: "costmap_2d::InflationLayer"}

@@ -1,8 +1,0 @@
-prefix=/home/virtual/RoboCup2018RVRL_Demo/workspace/devel
-
-Name: robot_gazebo
-Description: Description of robot_gazebo
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/virtual/RoboCup2018RVRL_Demo/workspace/devel/lib 
-Requires: 

@@ -1,0 +1,52 @@
+<!-- -->
+<launch>
+
+	<!-- spawning robot -->
+<arg name="robot_name" default="robot3"/>
+
+	<include file="$(find bring_up)/launch/robot_spawn.launch">
+		<arg name="robot_name" value="$(arg robot_name)"/>
+		<arg name="pose_x" value="0"/> 
+		<arg name="pose_y" value="4.5"/>
+		<arg name="pose_yaw" default="0"/> <!-- -1.5708 -->
+	</include>
+
+	<!-- slam node -->
+	<include file="$(find bring_up)/launch/gmapping.launch">
+		<arg name="robot_name" value="$(arg robot_name)"/>
+	</include>
+
+	<!-- simple navigation 
+	<include file="$(find mrl_move_base)/launch/simple_nav.launch"> 
+		<arg name="robot_name" value="$(arg robot_name)"/>
+	</include> -->
+
+	<!-- exploration -->
+	<include file="$(find mrl_move_base)/launch/exploration.launch"> 
+		<arg name="robot_name" value="$(arg robot_name)"/>
+	</include>
+
+	<!-- map marker -->
+	<include file="$(find bring_up)/launch/geotiff_mapper.launch">
+		<arg name="robot_name" value="$(arg robot_name)"/>
+	</include>
+	<!-- map writer -->
+	<include file="$(find bring_up)/launch/geotiff_creator.launch">
+		<arg name="robot_name" value="$(arg robot_name)"/>
+	</include>
+
+	<!-- object tracker -->
+	<include file="$(find hector_object_tracker)/launch/object_tracker.launch">
+		<arg name="robot_name" value="$(arg robot_name)"/>
+	</include>
+
+	<!-- victim -->
+	<node pkg="mrl_victim_detection" type="mrl_victim_detection" name="mrl_victim_detection">
+	       <param name="base_link" value="$(arg robot_name)/base_link"/>
+	       <remap from="syscommand" to="$(arg robot_name)/syscommand"/>
+	</node>
+
+	<include file="$(find bring_up)/launch/bring_up.launch">
+	</include>
+</launch>
+

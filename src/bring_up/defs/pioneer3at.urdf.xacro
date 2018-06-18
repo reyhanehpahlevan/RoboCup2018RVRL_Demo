@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+       xmlns:xacro="http://ros.org/wiki/xacro"
+	name="$(arg robot_name)">
+
+
+  <xacro:include filename="$(find bring_up)/defs/pioneer3at_body.xacro"/>
+  <xacro:include filename="$(find bring_up)/defs/hokuyo_utm30lx.urdf.xacro"/>
+  <xacro:include filename="$(find bring_up)/defs/camera_rc2016.urdf.xacro"/>
+  <xacro:include filename="$(find bring_up)/defs/thermal_camera.urdf.xacro"/>
+
+  <xacro:hokuyo_utm30lx name="laser" parent="base_link" ros_topic="scan" update_rate="30" ray_count="1040" min_angle="175" max_angle="-175" >
+    <origin xyz="0.13 0 0.32" rpy="0 0 0"/>
+  </xacro:hokuyo_utm30lx>
+
+  <xacro:camera_rc2016 name="camera" parent="base_link" ros_topic="rgb" update_rate="15" height="0.27">
+    <origin xyz="0.15 0 0.12" rpy="0 0 0"/>
+  </xacro:camera_rc2016>
+
+  <xacro:thermal_camera name="thermal" parent="base_link" ros_topic="thermic" update_rate="15" height="0.22">
+    <origin xyz="0.14 0 0.12" rpy="0 0 0"/>
+  </xacro:thermal_camera>
+
+<!-- <xacro:p3at_front suffix="left" reflect="1"/>
+<xacro:p3at_front suffix="right" reflect="-1"/>
+<xacro:p3at_back suffix="left" reflect="1"/>
+<xacro:p3at_back suffix="right" reflect="-1"/>
+
+<xacro:p3at_gazebo_ext robot_name=$(arg robot_name)/>-->
+
+
+</robot>
