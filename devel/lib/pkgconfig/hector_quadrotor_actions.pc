@@ -1,0 +1,8 @@
+prefix=/home/virtual/RoboCup2018RVRL_Demo/devel
+
+Name: hector_quadrotor_actions
+Description: Description of hector_quadrotor_actions
+Version: 0.0.0
+Cflags: -I/home/virtual/RoboCup2018RVRL_Demo/src/hector_quadrotor_actions/include
+Libs: -L/home/virtual/RoboCup2018RVRL_Demo/devel/lib 
+Requires: roscpp

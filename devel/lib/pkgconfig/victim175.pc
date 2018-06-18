@@ -1,0 +1,8 @@
+prefix=/home/virtual/RoboCup2018RVRL_Demo/devel
+
+Name: victim175
+Description: Description of victim175
+Version: 2.5.8
+Cflags: -I/home/virtual/RoboCup2018RVRL_Demo/src/victim175/include
+Libs: -L/home/virtual/RoboCup2018RVRL_Demo/devel/lib 
+Requires: message_generation gazebo_msgs roscpp rospy nodelet angles std_srvs geometry_msgs sensor_msgs nav_msgs urdf tf tf2_ros dynamic_reconfigure rosgraph_msgs trajectory_msgs image_transport rosconsole camera_info_manager std_msgs

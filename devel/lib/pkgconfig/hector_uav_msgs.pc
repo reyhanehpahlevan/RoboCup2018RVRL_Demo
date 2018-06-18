@@ -1,0 +1,8 @@
+prefix=/home/virtual/RoboCup2018RVRL_Demo/devel
+
+Name: hector_uav_msgs
+Description: Description of hector_uav_msgs
+Version: 0.3.5
+Cflags: -I/home/virtual/RoboCup2018RVRL_Demo/devel/include -I/home/virtual/RoboCup2018RVRL_Demo/src/hector_uav_msgs/include
+Libs: -L/home/virtual/RoboCup2018RVRL_Demo/devel/lib 
+Requires: message_runtime std_msgs

@@ -1,0 +1,8 @@
+prefix=/home/virtual/RoboCup2018RVRL_Demo/install
+
+Name: quadrotor_description
+Description: Description of quadrotor_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/virtual/RoboCup2018RVRL_Demo/install/lib 
+Requires: 
