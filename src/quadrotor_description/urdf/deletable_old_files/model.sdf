@@ -38,7 +38,7 @@
 
 <!-- HOKUYO --> 
       <visual name="quadrotor-base_link_fixed_joint_lump__laser0_frame_visual_1">
-        <pose>0.0 0.0 -0.097 3.14158186032 -0.0 0.0</pose>
+        <pose>0.0 0.0 -0.097 3.14158186032 -1.57 0.0</pose>
         <geometry>
           <mesh>
             <uri>model://quadrotor_ros/hokuyo_utm_30lx.dae</uri>
@@ -47,7 +47,7 @@
         </geometry>
       </visual>
       <collision name="quadrotor-base_link_fixed_joint_lump__laser0_frame_visual_1">
-        <pose>0.0 0.0 -0.097 3.14158186032 -0.0 0.0</pose>
+        <pose>0.0 0.0 -0.097 3.14158186032 -1.57 0.0</pose>
         <geometry>
           <mesh>
             <uri>model://quadrotor_ros/hokuyo_utm_30lx.stl</uri>
@@ -56,17 +56,17 @@
         </geometry>
       </collision>
       <sensor type="ray" name="lms200">
-        <pose>0.0 0.0 -0.097 3.14158186032 -0.0 0.0</pose>
+        <pose>0.0 0.0 -0.097 3.14158186032 -1.57 0.0</pose>
         <always_on>true</always_on>
         <update_rate>30</update_rate>
-        <visualize>false</visualize>
+        <visualize>true</visualize>
         <ray>
           <scan>
             <horizontal>
-            <samples>181</samples>
-            <resolution>1</resolution>
-            <min_angle>-1.570796</min_angle>
-            <max_angle>1.570796</max_angle>
+		          <samples>1040</samples>			<!-- 1040!!! -->
+		          <resolution>1</resolution>
+		          <min_angle>-0.2617</min_angle> <!-- 90deg: -1.570796 -->
+		          <max_angle>0.2617</max_angle>  <!-- 90deg: 1.570796  -->
             </horizontal>
           </scan>
           <range>
@@ -76,6 +76,7 @@
           </range>
         </ray>
         <plugin name="gazebo_ros_hokuyo_controller" filename="libgazebo_ros_laser.so">
+          <robotNamespace>robot</robotNamespace>
           <gaussianNoise>0.005</gaussianNoise>
           <alwaysOn>true</alwaysOn>
           <updateRate>30</updateRate>
