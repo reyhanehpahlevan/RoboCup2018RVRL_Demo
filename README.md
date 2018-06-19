@@ -30,7 +30,7 @@ check the network folder and setup your computer based on the coressponding file
     $ roslaunch robot_description spawn_multi_robots_pre_outdoor1_1.launch  
     (roslaunch quadrotor_description spawn_multi_robots.launch)  
 
-## Server Setup for world_Pre_outdoor1_1.launch
+## Server Setup for world_Pre_indoor1_1.launch
 
 ### Launch the server
     At terminal1 :  
