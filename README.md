@@ -1,5 +1,6 @@
 # RoboCup2018 Rescue Simulation Virtual Robot League 
 
+### You can access the scoring by the clicking [here](https://docs.google.com/spreadsheets/d/1-B7wG5-vcC4PbqGRlvNE4zfG6vQnTvdOxo-FyXnkg1U)
 
 
 ##  Network Setup
