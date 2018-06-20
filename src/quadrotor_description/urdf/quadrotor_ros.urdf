@@ -85,9 +85,9 @@
   <joint name="laser0_joint" type="fixed">
     <origin rpy="3.14159265359 0 0" xyz="0.0 0.0 -0.097"/>
     <parent link="base_link"/>
-    <child link="laser0_frame"/>
+    <child link="hokuyo_frame"/>
   </joint>
-  <link name="laser0_frame">
+  <link name="hokuyo_frame">
     <inertial>
       <mass value="0.270"/>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -107,7 +107,7 @@
       </geometry>
     </collision>
   </link>
-  <gazebo reference="laser0_frame">
+  <gazebo reference="hokuyo_frame">
     <sensor name="laser0" type="ray">
       <always_on>true</always_on>
       <update_rate>40</update_rate>
@@ -135,7 +135,7 @@
       </ray>
       <plugin filename="libgazebo_ros_laser.so" name="gazebo_ros_laser0_controller">
         <topicName>scan</topicName>
-        <frameName>laser0_frame</frameName>
+        <frameName>hokuyo_frame</frameName>
       </plugin>
     </sensor>
   </gazebo>
