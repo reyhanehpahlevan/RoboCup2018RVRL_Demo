@@ -2,21 +2,25 @@
 <launch>
   <include file="$(find robot_description)/launch/robot_spawn.launch">
     <arg name="robot_name" value="robot0"/>
-    <arg name="xcoordinate" value="21"/>
-    <arg name="ycoordinate" value="-14"/>
+    <arg name="xcoordinate" value="-3"/>
+    <arg name="ycoordinate" value="0"/>
   </include> 
 
   <include file="$(find robot_description)/launch/robot_spawn.launch">
     <arg name="robot_name" value="robot1"/>
-    <arg name="xcoordinate" value="-3"/>
-    <arg name="ycoordinate" value="7"/>
+    <arg name="xcoordinate" value="3"/>
+    <arg name="ycoordinate" value="0"/>
   </include>
   <include file="$(find robot_description)/launch/robot_spawn.launch">
     <arg name="robot_name" value="robot2"/>
-    <arg name="xcoordinate" value="12"/>
-    <arg name="ycoordinate" value="-10"/>
+    <arg name="xcoordinate" value="0"/>
+    <arg name="ycoordinate" value="3"/>
   </include>
 
-
+  <include file="$(find quadrotor_description)/launch/robot_spawn.launch">
+    <arg name="robot_name" value="robot3"/>
+    <arg name="xcoordinate" value="0"/>
+    <arg name="ycoordinate" value="-3"/>
+  </include>
 
 </launch>
