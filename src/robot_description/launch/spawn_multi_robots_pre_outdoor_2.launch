@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<launch>
+  <include file="$(find quadrotor_description)/launch/robot_spawn.launch">
+    <arg name="robot_name" value="uav0"/>
+    <arg name="xcoordinate" value="-5"/>
+    <arg name="ycoordinate" value="-100"/>
+  </include> 
+
+  <include file="$(find robot_description)/launch/robot_spawn.launch">
+    <arg name="robot_name" value="ground"/>
+    <arg name="xcoordinate" value="-96"/>
+    <arg name="ycoordinate" value="7"/>
+  </include>
+  <include file="$(find robot_description)/launch/robot_spawn.launch">
+    <arg name="robot_name" value="robot0"/>
+    <arg name="xcoordinate" value="5"/>
+    <arg name="ycoordinate" value="100"/>
+  </include>
+
+  <include file="$(find robot_description)/launch/robot_spawn.launch">
+    <arg name="robot_name" value="robot1"/>
+    <arg name="xcoordinate" value="96"/>
+    <arg name="ycoordinate" value="7"/>
+  </include> 
+
+  <include file="$(find robot_description)/launch/robot_spawn.launch">
+    <arg name="robot_name" value="robot2"/>
+    <arg name="xcoordinate" value="5"/>
+    <arg name="ycoordinate" value="95"/>
+  </include> 
+
+
+</launch>
