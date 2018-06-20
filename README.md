@@ -4,7 +4,7 @@
 
 
 ##  Installation   
-You can install Ros(Kinetic), Gazebo 8, neccessary packages by the following command using the ubuntu 16.04:  
+You can install Ros(Kinetic), Gazebo 8, necessary packages by the following command using the ubuntu 16.04:  
 
     $ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'   
     $ sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv-key 0xB01FA116   
