@@ -3,8 +3,9 @@
 ### You can access the scoring by the clicking [here](https://docs.google.com/spreadsheets/d/1-B7wG5-vcC4PbqGRlvNE4zfG6vQnTvdOxo-FyXnkg1U)
 
 
-##  Installation  
+##  Installation   
 You can install Ros(Kinetic), Gazebo 8, neccessary packages by the following command using the ubuntu 16.04:  
+
     $sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'   
     $sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv-key 0xB01FA116   
     $sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-latest.list'   
