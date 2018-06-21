@@ -7,24 +7,24 @@
   </include> 
 
   <include file="$(find quadrotor_description)/launch/robot_spawn.launch">
-    <arg name="robot_name" value="robot1"/>
+    <arg name="robot_name" value="robot4"/>
     <arg name="xcoordinate" value="67"/>
     <arg name="ycoordinate" value="1"/>
   </include>
   <include file="$(find robot_description)/launch/robot_spawn.launch">
-    <arg name="robot_name" value="robot2"/>
+    <arg name="robot_name" value="robot1"/>
     <arg name="xcoordinate" value="67"/>
     <arg name="ycoordinate" value="-2"/>
   </include>
 
   <include file="$(find robot_description)/launch/robot_spawn.launch">
-    <arg name="robot_name" value="robot3"/>
+    <arg name="robot_name" value="robot2"/>
     <arg name="xcoordinate" value="-28"/>
     <arg name="ycoordinate" value="6"/>
   </include>
 
   <include file="$(find robot_description)/launch/robot_spawn.launch">
-    <arg name="robot_name" value="robot4"/>
+    <arg name="robot_name" value="robot3"/>
     <arg name="xcoordinate" value="-28"/>
     <arg name="ycoordinate" value="2.5"/>
   </include>
