@@ -1,8 +1,0 @@
-prefix=/home/virtual/RoboCup2018RVRL_Demo/devel
-
-Name: hector_gazebo_plugins
-Description: Description of hector_gazebo_plugins
-Version: 0.5.0
-Cflags: -I/home/virtual/RoboCup2018RVRL_Demo/devel/include -I/home/virtual/RoboCup2018RVRL_Demo/src/hector_gazebo_plugins/include
-Libs: -L/home/virtual/RoboCup2018RVRL_Demo/devel/lib 
-Requires: roscpp std_msgs geometry_msgs nav_msgs tf message_runtime

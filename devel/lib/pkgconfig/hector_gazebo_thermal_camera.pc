@@ -1,8 +1,0 @@
-prefix=/home/virtual/RoboCup2018RVRL_Demo/devel
-
-Name: hector_gazebo_thermal_camera
-Description: Description of hector_gazebo_thermal_camera
-Version: 0.5.0
-Cflags: -I/home/virtual/RoboCup2018RVRL_Demo/src/hector_gazebo_thermal_camera/include
-Libs: -L/home/virtual/RoboCup2018RVRL_Demo/devel/lib 
-Requires: gazebo_plugins

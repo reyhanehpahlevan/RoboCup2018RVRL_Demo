@@ -1,6 +1,0 @@
-set(victim175_SETUP_PY_VERSION "2.5.8")
-set(victim175_SETUP_PY_SCRIPTS "")
-set(victim175_SETUP_PY_PACKAGES "victim175")
-set(victim175_SETUP_PY_PACKAGE_DIRS "src/victim175")
-set(victim175_SETUP_PY_MODULES "")
-set(victim175_SETUP_PY_MODULE_DIRS "")

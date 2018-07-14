@@ -21,7 +21,7 @@
         <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
         <geometry>
           <mesh>
-            <uri>model://quadrotor_ros0/quadrotor-base.dae</uri>
+            <uri>model://quadrotor_ros/quadrotor-base.dae</uri>
             <scale>1.0 1.0 1.0</scale>
           </mesh>
         </geometry>
@@ -30,7 +30,7 @@
         <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
         <geometry>
           <mesh>
-            <uri>model://quadrotor_ros0/quadrotor-base.stl</uri>
+            <uri>model://quadrotor_ros/quadrotor-base.stl</uri>
             <scale>1.0 1.0 1.0</scale>
           </mesh>
         </geometry>
@@ -163,7 +163,7 @@
         <pose>-0.16 0.0 -0.012 3.14159 1.57079 3.14159</pose>
         <geometry>
           <mesh>
-            <uri>model://quadrotor_ros0/max_sonar_ez4.dae</uri>
+            <uri>model://quadrotor_ros/max_sonar_ez4.dae</uri>
             <scale>1.0 1.0 1.0</scale>
           </mesh>
         </geometry>
@@ -172,7 +172,7 @@
         <pose>-0.16 0.0 -0.012 3.14159 1.57079 3.14159</pose>
         <geometry>
           <mesh>
-            <uri>model://quadrotor_ros0/max_sonar_ez4.dae</uri>
+            <uri>model://quadrotor_ros/max_sonar_ez4.dae</uri>
             <scale>1.0 1.0 1.0</scale>
           </mesh>
         </geometry>
