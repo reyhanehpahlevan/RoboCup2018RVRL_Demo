@@ -25,21 +25,21 @@ check the network folder and setup your computer based on the coressponding file
     $ ./cleanup    
     $ catkin_make  
     
-## Server Setup for world_Pre_outdoor1_1.launch
+## Server Setup for world_Pre_outdoor_1.launch
 
 ### Launch the server
     At terminal1 :  
 
     $ cd ~/RoboCup2018RVRL_Demo  
     $ . setup.bash  
-    $ roslaunch setup world_pre_outdoor1_1.launch  
+    $ roslaunch setup world_pre_outdoor_1.launch  
 
 ### Spawn robots
     At terminal2 :  
 
     $ cd ~/RoboCup2018RVRL_Demo  
     $ . setup.bash  
-    $ roslaunch robot_description spawn_multi_robots_pre_outdoor1_1.launch  
+    $ roslaunch robot_description spawn_multi_robots_pre_outdoor_1.launch  
     (roslaunch quadrotor_description spawn_multi_robots.launch)  
 
 ## Server Setup for world_Pre_indoor1_1.launch
