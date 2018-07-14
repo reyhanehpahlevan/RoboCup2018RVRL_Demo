@@ -66,6 +66,12 @@ check the network folder and setup your computer based on the coressponding file
     $ . setup.bash  
     $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=robot0/cmd_vel  
     (roslaunch hector_quadrotor_teleop SELECT_YOUR_GC.launch robot:=robot0)  
-  
 
+For quadrotors.
 
+    At terminal3 :  
+
+    $ cd ~/RoboCup2018RVRL_Demo  
+    $ . setup.bash  
+    $ rosrun hector_quadrotor_teleop logitech_gamepad.launch robot:=robot0  
+    (Push button4, to start motors)  
